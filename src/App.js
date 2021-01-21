@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import AdCreativePage from './components/AdCreativePage'
+import data from './data/brandAwareness';
 
 function App() {
+  const objective = 'brand_awareness';
+  var key = null;
+
+  data.map((option,index) => {
+    if(option.objective == objective)
+    {
+      console.log()
+      key = index;
+    }
+  });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AdCreativePage data={data[key]}/> 
+      {/* {console.log(reach)} */}
     </div>
   );
 }

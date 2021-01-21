@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 80%;
+  margin-left: 20%;
+}
+
+.wrapper {
+  background-color: #f3f5f7;
+  border-color: #f3f3f3;
+  border-radius: 5px;
+  padding: 40px;
+}
+.block {
+  border-top: 2px solid #f3f5f7;
+  background-color: #fff;
+  padding: 28px 10%;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.02);
+}
+.block-header {
+  font-family: "roboto";
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.input-group {
+  text-align: left;
+  margin-bottom: 24px;
+}
+.switch-input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.url-text {
+  font-size: 1em;
+}
+.url-sub-text {
+  font-size: 0.8em;
+  opacity: 0.65;
+}
+input,
+select {
+  border: 1px solid #e3e3e3;
+  width: 100%;
+  border-radius: 3px;
+  padding: 14px 14px;
+  text-align: left;
+  font-size: 0.89em;
+}
+
+.switch {
+  margin-left: 24px;
+}
+
+label {
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  opacity: 0.65;
+  text-transform: capitalize;
+  display: block;
+}
+input:focus,
+input:active,
+select:focus,
+select:active {
+  outline: none;
+  border: 1px solid #2c88f1;
+}
+button {
+  background-color: #2c88f1;
+  transition: all 0.35s ease-in-out;
+  color: #fff;
+  border: 0;
+  font-weight: 500;
+  font-size: 1em;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  padding: 16px;
+  width: 80%;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #1f75d6;
+}
+
+.carousel-item-group {
+  background-color: #f3f5f7;
+  border-radius: 8px;
+  margin: 16px 0;
+  padding: 24px;
+}
+
+.carousel-header {
+  /* margin-bottom: 16px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-header p {
+  font-size: 0.9em;
+  opacity: 0.75;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.carousel-header span {
+  cursor: pointer;
+}
+
+.carousel-input-container {
+  margin-top: 16px;
+}
